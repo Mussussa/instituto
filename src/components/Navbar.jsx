@@ -49,24 +49,38 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Botões */}
+      {/* Links de Navegação (Substituímos os botões por tags <a>) */}
       <div 
         className={`${
           menuAberto ? "flex animate-menu-open" : "hidden"
         } md:flex flex-col md:flex-row flex-initial place-items-center-safe justify-center gap-2 md:gap-3 font-mono text-xs z-10 w-full md:w-auto border-t md:border-t-0 border-dashed border-slate-200 pt-3 md:pt-0 pb-2 md:pb-0`}
       >
-        <button className="p-1.5 w-full md:w-auto font-bold text-slate-700 bg-slate-100 border border-slate-600 rounded-xl hover:bg-slate-200 transition-colors">
+        <a 
+          href="#cursos"
+          onClick={() => setMenuAberto(false)}
+          className="block text-center p-1.5 w-full md:w-auto font-bold text-slate-700 bg-slate-100 border border-slate-600 rounded-xl hover:bg-slate-200 transition-colors cursor-pointer"
+        >
           <span className="text-red-600">Cursos</span>
-        </button>
-        <button className="p-1.5 w-full md:w-auto font-bold text-slate-600 hover:text-slate-900 border border-slate-600 rounded-xl transition-colors">
+        </a>
+        
+        <a 
+          href="#contactos"
+          onClick={() => setMenuAberto(false)}
+          className="block text-center p-1.5 w-full md:w-auto font-bold text-slate-600 hover:text-slate-900 border border-slate-600 rounded-xl transition-colors cursor-pointer"
+        >
           <span className="text-blue-600">Contactos</span>
-        </button>
+        </a>
 
-        <button className="p-1.5 w-full md:w-auto font-bold text-slate-600 hover:text-slate-900 transition-colors border border-slate-600 rounded-xl">
+        {/* Este link redireciona para a página "/sobre" que vais criar no futuro */}
+        <a 
+          href="#sobre"
+            onClick={() => setMenuAberto(false)}
+          className="block text-center p-1.5 w-full md:w-auto font-bold text-slate-600 hover:text-slate-900 transition-colors border border-slate-600 rounded-xl cursor-pointer"
+        >
           <span className="text-transparent inline-block [-webkit-text-stroke:1px_#000]">
             Sobre Nós
           </span>
-        </button>
+        </a>
       </div>
     </nav>
   );
