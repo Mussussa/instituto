@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // Importa o teu array completo diretamente do teu ficheiro de dados
 import { cursos } from "../data"; 
+import Escavadeira from '../assets/escavadeira.jpeg'
 
 // Mapeamento de imagens profissionais e de equipamentos
 const IMAGENS_CATEGORIAS = {
@@ -74,7 +75,7 @@ function Hero() {
           {cursoAtivo.categoria} • {cursoAtivo.duracao}
         </span>
 
-        <h1 className="text-xl md:text-4xl font-black text-white uppercase tracking-tight leading-tight drop-shadow-md">
+        <h1 className="text-xl md:text-4xl font-black text-red-700 uppercase tracking-tight leading-tight drop-shadow-md">
           {cursoAtivo.titulo}
         </h1>
 
@@ -97,7 +98,7 @@ function Hero() {
                   : "opacity-0 -translate-x-4 pointer-events-none"
               }`}
             >
-              <span className="text-emerald-400 font-bold font-sans">✓ Aprendizado:</span> "{itemAprender}"
+              <span className="text-yellow-400 font-bold font-sans">✓ Aprendizado:</span> "{itemAprender}"
             </p>
           ))}
         </div>

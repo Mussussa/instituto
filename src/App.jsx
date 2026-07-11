@@ -141,7 +141,7 @@ function App() {
             <aside className="lg:col-span-5 fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 lg:bg-transparent lg:static lg:p-0 lg:z-auto">
               <div className="w-full max-w-xl lg:max-w-full border border-blue-200 bg-white rounded-3xl p-6 shadow-2xl relative overflow-hidden max-h-[90vh] lg:max-h-none lg:h-full overflow-y-auto">
                 <div
-                  className="absolute inset-0 opacity-[0.03] pointer-events-none"
+                  className="absolute inset-0 opacity-[0.1] pointer-events-none"
                   style={{
                     backgroundImage: `url('/logo.jpeg')`,
                     backgroundSize: "contain",
