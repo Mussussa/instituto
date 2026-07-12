@@ -159,6 +159,7 @@ function App() {
                       <h2 className="font-sans text-xl font-black text-slate-900 mt-3">
                         {cursoSelecionado.titulo}
                       </h2>
+                      <p className="text-red-600"> DURAÇÃO:{cursoSelecionado.duracao}</p>
                     </div>
                     <button
                       onClick={() => setCursoSelecionado(null)}
