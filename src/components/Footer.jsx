@@ -202,19 +202,19 @@ const Footer = () => {
             <h3 className="text-white font-black text-lg uppercase tracking-wider border-b-2 border-blue-500 pb-2 inline-block text-center md:text-left">
               Encontre-nos
             </h3>
-            <div className="w-full h-56 md:h-full min-h-[200px] bg-slate-800 rounded-2xl overflow-hidden shadow-inner relative border-2 border-slate-700/50">
-              <iframe
-                title="Mapa da Localização GREJUDEC"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11894.634629406085!2d34.83333!3d-19.83333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDUwJzAwLjAiUyAzNMMwNTAnMDAuMCJF!5e0!3m2!1spt-PT!2smz!4v1650000000000!5m2!1spt-PT!2smz"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-500"
-              ></iframe>
-            </div>
+<div className="w-full h-56 md:h-full min-h-[200px] bg-slate-800 rounded-2xl overflow-hidden shadow-inner relative border-2 border-slate-700/50">
+  <iframe
+    title="Mapa da Localização Grejudec"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.3769923954574!2d34.8824064!3d-19.823995399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1f2a41926b289b3f%3A0x43f98bc1102e9ff4!2sGrejudec!5e0!3m2!1spt-PT!2smz!4v1783937599328!5m2!1spt-PT!2smz"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="strict-origin-when-cross-origin"
+    className="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-500"
+  ></iframe>
+</div>
           </div>
         </div>
 
