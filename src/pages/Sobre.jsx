@@ -13,7 +13,7 @@ function Sobre() {
     },
     contactos: {
       chamadas: ["860 717 318"],
-      whatsapp: ["841 008 432", "860 763 555"],
+      whatsapp: ["841 008 432"],
     },
     requisitos: [
       "Cópia de BI",
