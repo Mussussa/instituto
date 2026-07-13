@@ -205,7 +205,8 @@ const Footer = () => {
             <h3 className="text-white font-black text-lg uppercase tracking-wider border-b-2 border-blue-500 pb-2 inline-block text-center md:text-left">
               Encontre-nos
             </h3>
-            <div className="w-full h-56 md:h-full min-h-[200px] bg-slate-800 rounded-2xl overflow-hidden shadow-inner relative border-2 border-slate-700/50">
+            <div className="w-full h-56 md:h-full min-h-[200px] bg-slate-800 rounded-2xl overflow-hidden shadow-inner relative border-2 border-slate-700/50 group">
+              {/* Iframe do Mapa */}
               <iframe
                 title="Mapa da Localização Grejudec"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.3769923954574!2d34.8824064!3d-19.823995399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1f2a41926b289b3f%3A0x43f98bc1102e9ff4!2sGrejudec!5e0!3m2!1spt-PT!2smz!4v1783937599328!5m2!1spt-PT!2smz"
@@ -217,6 +218,16 @@ const Footer = () => {
                 referrerPolicy="strict-origin-when-cross-origin"
                 className="absolute inset-0 transition-all duration-500"
               ></iframe>
+
+              {/* Botão para abrir no App/Maps */}
+              <a
+                href="https://maps.app.goo.gl/gqVbMyHgrbbzVFz18"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-4 left-4 bg-yellow-300 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold text-slate-800 shadow-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+              >
+                Ver no Maps
+              </a>
             </div>
           </div>
         </div>
